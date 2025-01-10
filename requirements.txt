@@ -1,0 +1,8 @@
+flask
+pandas
+joblib
+forms
+scikit-learn==1.5.2
+feature_engine
+flask-wtf
+gunicorn
