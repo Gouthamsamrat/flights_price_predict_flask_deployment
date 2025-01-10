@@ -1,7 +1,6 @@
 flask
 pandas
 joblib
-forms
 wtforms
 scikit-learn==1.5.2
 feature_engine
