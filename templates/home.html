@@ -1,9 +1,7 @@
 {% extends "layout.html" %}
 
-{% block content %}
-
-<div>
-    <h3>This is a Flight Price Prediction model based on Machine Learning</h3>
-    <a href=" {{url_for('predict')}} ">Click Here!</a>
-</div>
-{% endblock content %}
+{% block welcome_text %}
+<h1>Hi!</h1>
+<h1>This the home page of flights price prediction</h1>
+<div>Do you want the prediction for your flight?<a href=" {{ url_for('predict') }} ">Click Here</a></div>
+{% endblock welcome_text %}

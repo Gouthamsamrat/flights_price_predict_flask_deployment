@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
+{% block welcome_text %}
+<h1>Welcome to Flights Price Prediction Page!</h1>
+<h3>Enter the following details and get your predicted price!</h3>
+{% endblock welcome_text %}
+
 {% block content %}
 <form action="" method="post">
     {{form.hidden_tag()}}

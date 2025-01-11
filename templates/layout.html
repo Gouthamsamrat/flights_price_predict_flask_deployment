@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
+    <style>
+        body {
+            background-color: black; /* Set background to black */
+            color: white; /* Set text color to white */
+            text-align: center; /* Align content to center */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body class="bg-dark">
-    <h1>Welcome to the {{title}} page!</h1>
-    {% with messages = get_flashed_messages() %}
+<body>
+     <!-- Dynamic Welcome Text -->
+    {% block welcome_text %}
+    {% endblock welcome_text %}
+     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
                 <div>{{ message }}</div>
@@ -15,6 +29,6 @@
         {% endif %}
     {% endwith %}
     {% block content %}
-    {% endblock %}
+    {% endblock content %}
 </body>
 </html>
